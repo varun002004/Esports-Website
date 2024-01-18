@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saeva Esports  </title>
+    <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/kursor.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="shortcut icon" href="assets/color_logo.png" type="image/x-icon">
+    
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logobs.png">
+<style>
+  @font-face {
+  font-family: 'Eddie';
+    src:  url('fonts\Eddie-L8Mg.ttf') format('truetype');
+   
+}
+.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+.l{
+  display:none;
+}
+@keyframes fadeOut {
+    100% {
+        height: 0%;
+        
+    }
+}
+body{
+  overflow: hidden;
+  
+}
+.overflow{
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+</style>
+</head>
+<body bgcolor="#000">
+
+
+<script type="text/javascript">
+  window.addEventListener("load", function () {
+const loader = document.querySelector(".vertical-centered-box");
+loader.className += " hidden"; 
+});
+window.addEventListener("load", function () {
+const loader = document.querySelector(".loadingimg");
+loader.className += " l"; 
+});
+window.addEventListener("load", function () {
+const loader = document.querySelector(".loader-line-mask");
+loader.className += " l"; 
+});
+window.addEventListener("load", function () {
+const loader = document.querySelector(".loader-circle");
+loader.className += " l"; 
+});
+window.addEventListener("load", function () {
+const loader = document.querySelector("body");
+loader.className += "overflow"; 
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 2) {
+        $(".image-box__background").addClass("straight");
+    } else {
+        $(".image-box__background").removeClass("straight");
+    }
+});
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $("nav").addClass("darkHeader");
+    } else {
+        $("nav").removeClass("darkHeader");
+    }
+});
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+
+
+  
+    console.log('Window Height is: ' + $(window).height());
+  console.log('Document Height is: ' + $(document).height());
+
+  var previousScroll = 0;
+
+  $(window).scroll(function(){
+
+    var currentScroll = $(this).scrollTop();
+
+    if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
+     
+      if (currentScroll > previousScroll){
+        window.setTimeout(hideNav, 300);
+     
+      } else {
+        window.setTimeout(showNav, 300);
+      }
+    
+    
+      previousScroll = currentScroll;
+    }
+
+  });
+
+  function hideNav() {
+    $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
+  }
+  function showNav() {
+    $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
+  }
+
+});
+</script>
+<div id="particles-background" class="vertical-centered-box"></div>
+<div id="particles-foreground" class="vertical-centered-box"></div>
+
+<div class="vertical-centered-box">
+  <div class="content">
+    <div class="loader-circle"></div>
+    <div class="loader-line-mask">
+      <div class="loader-line"></div>
+    </div>
+    <img src="assets/logoblue.png" class="loadingimg">
+  </div>
+</div>
+
+<nav class="stroke  is-visible" data-nav-status='toggle'>
+  
+  <ul>
+   
+    <li><a class="a">home</a></li>
+    <li><a class="a">Teams</a></li>
+    <li><a class="a" href = "music.html">music</a></li>
+    
+    <li><a class="a" href="shop.html">Shop</a></li>
+    <li><a class="a">about</a></li>
+    <li><a class="a">contact</a></li>
+  </ul>
+ 
+</nav>
+
+
+  <img src="assets/logobluee.png" class="logo  is-visible" data-nav-status='toggle' >
+  <div class="image-box__background">
+      
+  </div>
+
+  <div class="image-box__content">
+    <h1 class="layer1 move" data-speed="-1"> WE LISTEN , WE PLAY</h1><br>
+    <img src="assets/saevab.png" data-speed ="0.5"width="50%" class="layer move"><br>
+    <h1 class="layer2 move" data-speed="1.2">APPARELS  .  ESPORTS . MUSIC</h1>
+
+</div>
+
+ 
+
+  <h1 class="teams">TEAMS</h1>
+    <section>
+      <div class="screen"><img src="assets/freefire.png" class="fl"><div class="content1" >
+        <a href="https://www.instagram.com/arrow_insane/" target="_blank" class="names"><h1 class="p1">INSANE</<h1><span style="font-family: 'Inter', sans-serif;"><center>Sourav Mandal</center></span></h1>
+        <img src="assets/1.png" class="player1">
+        <a href="https://www.instagram.com/arrow_abd_gaming/" target="_blank" class="names"><h1 class="p2">ABD<span style="font-family: 'Inter', sans-serif;"><center>Abdullah Khalid</center></span></h1>
+        <img src="assets/2.png" class="player2"></a>
+        <a href="https://www.instagram.com/arrow__dr/" target="_blank" class="names"><h1 class="p3">DR.BHAI<span style="font-family: 'Inter', sans-serif;"><center>Ahmed Irshad</center></span></h1>
+        <img src="assets/3.png" class="player3"></a>
+        <a href="https://www.instagram.com/arrow__oggy/" target="_blank" class="names"><h1 class="p4">OGGY<span style="font-family: 'Inter', sans-serif;"><center>Sahil Verma</center></span></h1>
+        <img src="assets/4.png" class="player4 "></a>
+      </div></div>
+      <div class="screen"><img src="assets/pubgm.png" class="pm"><div class="content1" >
+        <a href="" target="_blank" class="names"><h1 class="p1">Player 1</<h1><span style="font-family: 'Inter', sans-serif;"><center>Sourav Mandal</center></span></h1>
+        <img src="assets/11.png" class="player1">
+        <a href="" target="_blank" class="names"><h1 class="p2">Player 2<span style="font-family: 'Inter', sans-serif;"><center>Abdullah Khalid</center></span></h1>
+        <img src="assets/2.png" class="player2"></a>
+        <a href="" target="_blank" class="names"><h1 class="p3">Player 3<span style="font-family: 'Inter', sans-serif;"><center>Ahmed Irshad</center></span></h1>
+        <img src="assets/3.png" class="player3"></a>
+        <a href="" target="_blank" class="names"><h1 class="p4">Player 4<span style="font-family: 'Inter', sans-serif;"><center>Sahil Verma</center></span></h1>
+        <img src="assets/4.png" class="player4 "></a>
+      </div></div>
+      <div class="screen"><img src="assets/r6.png" class="r6"></div>
+  </section>
+  <div class="image-box__background">
+    
+  </div>
+
+  <div class="image-box__content">
+    <br><br><br><br><br>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/GStTrGq41xM" title="Which Browser is Using Less RAM (Chrome, Firefox &amp; Edge)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/GStTrGq41xM" title="Which Browser is Using Less RAM (Chrome, Firefox &amp; Edge)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/GStTrGq41xM" title="Which Browser is Using Less RAM (Chrome, Firefox &amp; Edge)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+<script>
+  document.addEventListener('mousemove' , parallax);
+  function parallax(e){
+    this.querySelectorAll('.move').forEach(layer =>{
+      var speed = layer.getAttribute('data-speed')
+      
+      var x = (window.innerWidth - e.pageX * speed) /100;
+      var y = (window.innerHeight - e.pageY * speed) /100;
+      layer.style.transform = `translate(${x}px,${y}px)`;
+    })
+  }
+  window.onload = function() {
+  document.getElementById('').className = 'expand';
+  };
+
+ 
+</script>
+
+</body>
+
+</html>
